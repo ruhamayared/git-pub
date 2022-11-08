@@ -10,11 +10,15 @@ const drinks = require("./models/drinks")
 
 //Routes
 app.get("/drinks", (req, res) => {
-    res.render("drinks_index.ejs", { drinks })
+    res.render("drinks_index.ejs", {
+        drinks: drinks
+    })
 })
 
 app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
+    res.render("drinks_show.ejs", {
+        drink: drinks[req.params.id]
+    })
 })
 
 app.get("/", (req, res) => {
@@ -25,4 +29,3 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server listening on: ${PORT}`)
 })
-
