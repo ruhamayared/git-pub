@@ -23,18 +23,6 @@ app.get("/drinks/:id", (req, res) => {
     })
 })
 
-//Food
-app.get("/drinks", (req, res) => {
-    res.render("drinks_index.ejs", {
-        drinks: drinks
-    })
-})
-
-
-app.get("/", (req, res) => {
-    res.send("Welcome to the Gitpub App!")
-})
-
 
 app.listen(PORT, () => {
     console.log(`Server listening on: ${PORT}`)
