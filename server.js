@@ -12,7 +12,7 @@ const drinks = require("./models/drinks")
 
 //Routes
 app.get("/drinks", (req, res) => {
-    res.send(drinks)
+    res.render("drinks_index.ejs")
 })
 app.get("/", (req, res) => {
     res.send("Welcome to the Gitpub App!")
