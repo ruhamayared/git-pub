@@ -9,10 +9,20 @@
 <body>
     <h1>Welcome to gitPub!</h1>
 
+    <ul>
+        <% drinks.forEach((drink) => { %>
+            <li><%= drink.name %></li>
+        <% }) %>
+    </ul>
+
+
 <style type="text/css">
     body {
       color: blanchedalmond;
       background-color: steelblue;
+    }
+    ul{
+        color: rgb(249, 244, 244);
     }
   </style>
 </body>

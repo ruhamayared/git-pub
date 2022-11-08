@@ -38,7 +38,15 @@ const drinks = [
       name: 'node to joy',
       price: 56,
       image: 'https://i.imgur.com/MbVdwZz.jpg'
-    }
+    },
   ]
+
+//   const getAll = function(){
+//         return drinks
+//     }
+    
+//   const getOne = function(index){
+//         return drinks[index]
+//     }
 
   module.exports = drinks

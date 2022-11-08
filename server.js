@@ -7,19 +7,18 @@ const app = express()
 
 const drinks = require("./models/drinks")
 
-//Middleware
-
 
 //Routes
 app.get("/drinks", (req, res) => {
-    res.render("drinks_index.ejs")
+    res.render("drinks_index.ejs", { drinks })
 })
+
 app.get("/", (req, res) => {
     res.send("Welcome to the Gitpub App!")
 })
 
 
-
 app.listen(PORT, () => {
     console.log(`Server listening on: ${PORT}`)
 })
+
