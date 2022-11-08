@@ -41,12 +41,4 @@ const drinks = [
     },
   ]
 
-//   const getAll = function(){
-//         return drinks
-//     }
-    
-//   const getOne = function(index){
-//         return drinks[index]
-//     }
-
   module.exports = drinks
