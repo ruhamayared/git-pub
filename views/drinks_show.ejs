@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>At foo bar</h1>
-    <h2><%= drink.name %></h2>
+    <h2><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></h2>
     <img src="<%= drink.image %>" alt="">
     <h3><%= drink.price %></h3>
 

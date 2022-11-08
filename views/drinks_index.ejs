@@ -13,7 +13,7 @@
 
     <ul>
         <% drinks.forEach((drink, index) => { %>
-            <a href="/drinks/<%= index %>"><li><%= drink.name %></li></a>
+            <a href="/drinks/<%= index %>"><li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></li></a>
         <% }) %>
     </ul>
 

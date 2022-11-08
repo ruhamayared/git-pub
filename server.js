@@ -6,8 +6,6 @@ const PORT = process.env.PORT || 3000
 const app = express()
 
 const drinks = require("./models/drinks")
-const food = require("./models/food")
-
 
 //Routes
 //Drinks
